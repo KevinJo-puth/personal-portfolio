@@ -1,0 +1,144 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+/* Navbar Scroll Effect */
+.navbar {
+  background-color: transparent !important;
+  transition: background-color 0.5s ease;
+}
+
+.navbar-scroll {
+  background-color: rgba(33, 37, 41, 0.95) !important; /* Dark transparent */
+}
+
+/* Gradient Background Shared */
+.hero,
+#about {
+  background: linear-gradient(135deg, #003973, #e5e5be, #004e92, #355c7d);
+  background-size: 400% 400%;
+  animation: BackgroundGradient 20s ease infinite;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  padding-top: 70px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Flip Card */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 300px;
+  perspective: 1000px;
+  transition: transform 0.8s ease-in-out;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flip-card-back {
+  background-color: #2c3e50;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive Text */
+.hero h1 {
+  font-size: 3rem;
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@keyframes BackgroundGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Background Images with Overlay */
+.project-bg,
+.skills-bg {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  z-index: 1;
+  background-attachment: fixed;
+}
+
+.project-bg {
+  background-image: url('./assets/10136775_17973908.jpg'); /* CS engineer code image */
+}
+
+.skills-bg {
+  background-image: url('./assets/10136775_17973908.jpg'); /* Code-themed engineering */
+}
+
+/* Overlay for readability */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  z-index: -1;
+}
+.flip-card-back{
+  background-image: url(./assets/autumn-studio-221wufG10eg-unsplash.jpg);
+   background-size: cover;
+  background-position: center; 
+  color: white;
+  z-index: -1;
+  background-attachment: fixed;
+}
