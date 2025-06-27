@@ -7,7 +7,7 @@
 
 body {
   scroll-behavior: smooth;
-  font-family: sans-serif;
+  
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
 }
@@ -33,12 +33,12 @@ body {
 
 /* Hero Section */
 .hero {
-  height: 100vh;
+  height:80vh;
   padding-top: 70px;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 #about {
-  height: 80vh;
+  height: 90vh;
   padding-bottom: 100px;
 }
 
@@ -236,4 +236,12 @@ body {
 .react-bar {
   width: 70%;
   background: linear-gradient(90deg, #2193b0, #6dd5ed);
+}
+.row{
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  z-index: 1;
+  background-attachment: fixed;
 }
