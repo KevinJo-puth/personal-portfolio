@@ -10,9 +10,7 @@ body {
   font-family: sans-serif;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  
 }
-
 
 /* Navbar Scroll Effect */
 .navbar {
@@ -39,7 +37,7 @@ body {
   padding-top: 70px;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
-#about{
+#about {
   height: 80vh;
   padding-bottom: 100px;
 }
@@ -100,7 +98,7 @@ body {
   .hero h1 {
     font-size: 2.2rem;
   }
-   .bars-container {
+  .bars-container {
     width: 90%;
   }
 
@@ -137,11 +135,11 @@ body {
 }
 
 .project-bg {
-  background-image: url('./assets/10136775_17973908.jpg'); /* CS engineer code image */
+  background-image: url("./assets/10136775_17973908.jpg"); /* CS engineer code image */
 }
 
 .skills-bg {
-  background-image: url('./assets/10136775_17973908.jpg'); /* Code-themed engineering */
+  background-image: url("./assets/10136775_17973908.jpg"); /* Code-themed engineering */
 }
 
 /* Overlay for readability */
@@ -154,10 +152,10 @@ body {
   background: rgba(107, 106, 106, 0.6); /* Dark overlay */
   z-index: -1;
 }
-.flip-card-back{
+.flip-card-back {
   background-image: url(./assets/autumn-studio-221wufG10eg-unsplash.jpg);
-   background-size: cover;
-  background-position: center; 
+  background-size: cover;
+  background-position: center;
   color: white;
   z-index: -1;
   background-attachment: fixed;
@@ -194,7 +192,7 @@ body {
   float: right;
 }
 
-/* 🔷 Modern base bar with glass and dark tech feel */
+/* base bar  */
 .base-bar {
   width: 100%;
   background: rgba(255, 255, 255, 0.05);
@@ -212,7 +210,7 @@ body {
   background: rgba(255, 255, 255, 0.12);
 }
 
-/* 💡 Animated fill effect for each skill */
+/*  Animated fill effect for each skill */
 .fill-bar {
   height: 100%;
   border-radius: 12px;
@@ -220,25 +218,22 @@ body {
   box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
-
 .html-bar {
   width: 90%;
-   background: linear-gradient(90deg, #2193b0, #6dd5ed);
+  background: linear-gradient(90deg, #2193b0, #6dd5ed);
 }
 
 .css-bar {
   width: 70%;
-     background: linear-gradient(90deg, #2193b0, #6dd5ed);
+  background: linear-gradient(90deg, #2193b0, #6dd5ed);
 }
 
 .js-bar {
   width: 75%;
-     background: linear-gradient(90deg, #2193b0, #6dd5ed);
+  background: linear-gradient(90deg, #2193b0, #6dd5ed);
 }
 
 .react-bar {
   width: 70%;
-    background: linear-gradient(90deg, #2193b0, #6dd5ed);
+  background: linear-gradient(90deg, #2193b0, #6dd5ed);
 }
-
-
